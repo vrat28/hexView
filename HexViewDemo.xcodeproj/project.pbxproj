@@ -12,6 +12,9 @@
 		372DB7B31DF582B600047C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372DB7B11DF582B600047C2B /* Main.storyboard */; };
 		372DB7B51DF582B600047C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372DB7B41DF582B600047C2B /* Assets.xcassets */; };
 		372DB7B81DF582B600047C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372DB7B61DF582B600047C2B /* LaunchScreen.storyboard */; };
+		372DB7C01DF582DC00047C2B /* HexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DB7BF1DF582DC00047C2B /* HexView.swift */; };
+		372DB7C21DF58A5F00047C2B /* HexCollectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DB7C11DF58A5F00047C2B /* HexCollectionCellCollectionViewCell.swift */; };
+		372DB7C61DF6A25C00047C2B /* HexCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372DB7C51DF6A25C00047C2B /* HexCollectionViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		372DB7B41DF582B600047C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		372DB7B71DF582B600047C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		372DB7B91DF582B600047C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372DB7BF1DF582DC00047C2B /* HexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexView.swift; sourceTree = "<group>"; };
+		372DB7C11DF58A5F00047C2B /* HexCollectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexCollectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		372DB7C51DF6A25C00047C2B /* HexCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexCollectionViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		372DB7AC1DF582B600047C2B /* HexViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37BCDE401DF94647009FADB8 /* View */,
+				372DB7C41DF6A22200047C2B /* Layout */,
+				372DB7C31DF58A6500047C2B /* cell */,
 				372DB7AD1DF582B600047C2B /* AppDelegate.swift */,
 				372DB7AF1DF582B600047C2B /* ViewController.swift */,
 				372DB7B11DF582B600047C2B /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				372DB7B91DF582B600047C2B /* Info.plist */,
 			);
 			path = HexViewDemo;
+			sourceTree = "<group>";
+		};
+		372DB7C31DF58A6500047C2B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				372DB7C11DF58A5F00047C2B /* HexCollectionCellCollectionViewCell.swift */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		372DB7C41DF6A22200047C2B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				372DB7C51DF6A25C00047C2B /* HexCollectionViewLayout.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		37BCDE401DF94647009FADB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				372DB7BF1DF582DC00047C2B /* HexView.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372DB7C21DF58A5F00047C2B /* HexCollectionCellCollectionViewCell.swift in Sources */,
+				372DB7C01DF582DC00047C2B /* HexView.swift in Sources */,
+				372DB7C61DF6A25C00047C2B /* HexCollectionViewLayout.swift in Sources */,
 				372DB7B01DF582B600047C2B /* ViewController.swift in Sources */,
 				372DB7AE1DF582B600047C2B /* AppDelegate.swift in Sources */,
 			);
@@ -263,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N672L2V5B7;
 				INFOPLIST_FILE = HexViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.HexViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N672L2V5B7;
 				INFOPLIST_FILE = HexViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.HexViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +340,7 @@
 				372DB7BE1DF582B600047C2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
